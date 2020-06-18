@@ -1,0 +1,185 @@
+#section-contatos {
+    width: 800px;
+    margin: auto;
+    margin-bottom: 400px;
+    margin-top: 30px;
+}
+.seguro {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+.section-contatos-formulario form {
+    width: 450px;
+}
+.field, .telefone {
+    margin-top: 10px;
+}
+.field input, textarea{
+    width: 100%;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 18px;
+    resize: none;
+}
+.field textarea {
+    height: 150px;
+}
+.telefone {
+    display: flex;
+    justify-content: space-between;
+}
+.telefone input {
+    width: 190px;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 18px;
+    border: solid 1px;
+}
+.section-contatos-maps {
+    width: 300px;
+}
+.section-contatos-maps h1,
+.section-contatos-formulario h1 {
+    font-size: 30px;
+}
+.section-contatos-maps div {
+    text-align: right;
+}
+.section-contatos-maps h1 {
+    text-align: right;
+}
+.section-contatos-maps .maps {
+    width: 298px;
+    height: 288px;
+}
+.section-contatos-maps img {
+    width: 30px;
+    height: 30px;
+}
+.section-contatos-end {
+    display: flex;
+    width: 300px;
+    margin-top: 6px;
+    margin-bottom: 7px;
+}
+.section-contatos-end img {
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+}
+.button {
+    text-align: right;
+    margin-top: 5px;
+}
+form button {
+    border-radius: 30px;
+    border: 2px solid;
+    text-align: center;
+    padding: 5px 19px;
+    font-size: 20px;
+    background: #FFF;
+    color: #202020;
+    font-family: 'Allerta', sans-serif;
+}
+#section-orcamento {
+    display: flex;
+    width: 700px;
+    margin: auto;
+    justify-content: space-between;
+    margin-bottom: 400px;
+    margin-top: 30px;
+}
+
+.section-orcamento-formulario {
+    width: 700px;
+}
+.section-orcamento-formulario .telefone input {
+    width: 315px;
+}
+.section-orcamento-formulario h1 {
+    text-align: center;
+    font-size: 40px;
+}
+#section-orcamento {
+    display: none;
+}
+
+@media screen and (max-width: 810px) {
+    #section-contatos {
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }
+    .seguro {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #section-contatos,
+    .section-contatos-formulario {
+        width: 100%;
+    }
+    .section-contatos-formulario form {
+        margin: auto;
+    }
+    .section-contatos-formulario h1,
+    .section-contatos-maps h1 {
+        text-align: center;
+    }
+    .section-contatos-maps {
+        width: 100%;
+    }
+    .section-contatos-maps .maps {
+        width: 65%;
+        height: 288px;
+        min-width: 288px;
+        margin-top: 20px;
+    }
+    .section-contatos-maps div {
+        text-align: center;
+    }
+    .section-contatos-end {
+        margin: auto;
+    }
+    @media screen and (max-width: 730px) {
+        #section-orcamento {
+            width: 100%;
+            margin-bottom: 30px;
+            
+        }
+        .section-orcamento-formulario {
+            width: 400px;
+            margin: auto;
+        }
+        .section-orcamento-formulario .telefone input {
+            width: 170px;
+        }
+    }
+    @media screen and (max-width: 646px) {
+    #section-banner {
+        background-size: cover 250px;
+        min-width: 320px;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+}
+    @media screen and (max-width: 490px) {
+        .section-contatos-formulario form {
+            width: 300px;
+        }
+        .telefone input {
+            width: 125px;
+            padding: 8px;
+        }
+        .section-orcamento-formulario {
+            width: 300px;
+            margin: auto;
+        }
+        .section-orcamento-formulario .telefone input {
+            width: 125px;
+        }
+    }
+}

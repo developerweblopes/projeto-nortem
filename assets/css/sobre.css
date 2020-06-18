@@ -1,0 +1,407 @@
+#section-banner {
+    background-image: url('../image/Layer\ 10.png');
+    height: 300px;
+    background-position: center;
+    background-size: cover ;
+    display: flex;
+    flex-direction: column;
+    text-align:  center;
+    justify-content: center;
+}
+.section-title {
+    text-align: center;
+    line-height: 300px;
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #FFF;  
+}
+
+/*=======================================================*/
+.section-text-video {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.section-text-video img {
+    width: 350px;
+    height: 350px;
+}
+.new_resume p {
+    font-size: 16px;
+    margin-right: 90px;
+    margin-top: 0;
+}
+/*=======================================================*/
+.widght {
+    max-width: 1050px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.widght_title {
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    width: 100%;
+    
+}
+.card_img{
+    display: flex;
+    width: 240px;
+    height: 240px;
+    margin: 5px;
+    border-radius: 200px;
+    border: solid 1.5px #109a66;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .card_img img {
+    margin-top: 4px;
+    width: 250px;
+    height: 250px;
+  }
+  
+  .small_img{
+    height: 100%;
+    cursor: pointer;
+    transition: all linear 0.4s;
+  }
+  .small_img:hover{
+    filter: grayscale(100%);
+    transform: scale(1.1);
+  }
+  
+  .row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  #modal_img{
+    width: 85vw;
+    transform: scale(0);
+    transition: all linear .3s;
+  }
+  
+  .modal_active #modal_img{
+    transform: scale(1);
+  }
+  .modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .9);
+    position: fixed;
+    visibility: hidden;
+    z-index: 999;
+    opacity: 0;
+    transition: visibility 0.8s linear, opacity 0.5s linear;
+  }
+  
+  .modal_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #bt_close{
+    color:#fff;
+    background-color: #000;
+    position: absolute;
+    top:10px;
+    right: 10px;
+    padding: 5px 10px;
+    font-size: 25px;
+    border:solid 1px #fff;
+    transition: all ease-out .4s;
+    cursor: pointer;
+  }
+  #bt_close:hover{
+    background-color: #f00;
+  }
+  
+  .modal_active{
+    visibility: visible;
+    opacity: 1;
+  }
+/*================================*/
+#section-service{
+    background-image: url('../image/Layer\ 17.png');
+    background-position: 20%;
+    background-attachment: fixed;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 40px;
+}
+.section-service-title {
+    display: flex;
+    width: 600px;
+    height: 350px;
+    margin: auto;
+    align-items: center;
+}
+.section-service-title p{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    color: #FFF;
+}
+.section-button {
+    width: 800px;
+    margin: auto;
+    text-align: center;
+    
+}
+.section-button a {
+    text-decoration: none;
+    border: solid 1.5px #FFF;
+    border-radius: 30px;
+    text-align: center;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 22px;
+    color: #FFF;
+    font-family: 'Allerta', sans-serif;
+    
+}
+@media screen and (min-width:200px) and (max-width:950px) {
+    .section-text-video {
+        display: flex;
+        flex-flow: column;
+    }
+    .new_resume {
+        order: 1;
+    }
+    .section-text-video div{
+        margin: auto;
+    }
+    .new_resume p {
+        margin: auto;
+        margin-top: 8px;
+    }
+    .card_img {
+        width: 260px;
+        height: 260px;
+        margin: 30px;
+    }
+    .card_img img {
+        width: 260px;
+    }
+    .widght {
+        max-width: 850px;
+        min-width: 320px;
+    }
+    .section-button{
+        width: 80%;
+    }
+}
+@media screen and (max-width:646px) {
+    #section-banner {
+        background-size: cover 250px;
+        min-width: 320px;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+    .section-text-video {
+        display: flex;
+        flex-flow: column;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .card_img {
+        width: 250px;
+        height: 250px;
+        margin: 20px;
+    }
+    .section-service-title {
+        width: 100%;
+    }
+    .section-service-title p{
+        font-size: 40px;
+    }
+    .section-button a {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:480px) {
+    .section-title {
+        font-size: 50px;
+        margin-top: 50px;
+    }
+    .section-button a {
+        font-size: 12px;
+    }
+    .section-button{
+        width: 100%;
+    }
+    .section-text-video img {
+        width: 300px;
+        height: 300px;
+    }
+}
+/*============================PAG EUCALIPTO==========================*/
+.section-banner-title{
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #FFF; 
+}
+.section-banner-subtitulo {
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #FFF; 
+}
+#section-eucaliptos {
+    width: 850px;
+    margin: auto;
+}
+.section-left {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 31px;
+}
+.section-itens-left .title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.section-left .img_4-6 {
+    margin-top: 25px;
+}
+.section-left img {
+    margin-right: 5px;
+}
+.body_resume {
+    font-family: 'Montserrat', sans-serif;
+    color: #363636;
+    width: 400px;
+}
+.section-itens-left a,
+.section-itens-right a{
+    text-decoration: none;
+    border: solid 1.5px #3c814e;
+    border-radius: 30px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 22px;
+    color: #3c814e;
+    font-family: 'Allerta', sans-serif;
+}
+.section-itens-left a:hover,
+.section-itens-right a:hover {
+    background-color: #3c814e;
+    color: #FFF;
+    transition: 1s;
+}
+.section-right {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 29px;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+.section-itens-right .title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: right;
+}
+.section-right .body_resume {
+    font-family: 'Montserrat', sans-serif;
+    color: #363636;
+    width: 400px;
+    text-align: right;
+}
+.section-itens-right .button {
+    text-align: right;
+}
+.col-x1,
+.col-x2 {
+    border: 0.5px solid #ccc;
+    width: 300px;
+    margin: auto;
+}
+.download {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    text-align: center; 
+}
+.download a {
+    text-decoration: none;
+    border: solid 1.5px #3c814e;
+    background-color: #3c814e;
+    border-radius: 30px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 22px;
+    color: #FFF;
+    font-family: 'Allerta', sans-serif;
+}
+.download a:hover {
+    background: #005830;
+    transition: 1s;
+    color: #000;
+}
+@media screen and (max-width:854px) {
+    #section-eucaliptos {
+        width: 100%;
+    }
+    @media screen and (max-width:854px) {
+        .download a {
+            font-size: 18px;
+        }
+    }
+}
+@media screen and (max-width:668px) {
+    .section-right{
+        margin-right: 10px;
+    }
+    .section-left {
+        margin-left: 10px;
+    }
+    .body_resume {
+        width: 100%;
+    }
+    @media screen and (max-width:500px) {
+        .section-banner-title {
+            font-size: 50px;
+            margin-top: 50px;
+        }
+        .section-banner-subtitulo {
+            font-size: 30px;
+        }
+        .section-right{
+            margin-right: 0px;
+        }
+        .section-left {
+            margin-left: 0px;
+        }
+        .body_resume {
+            width: 100%;
+            font-size: 13px;
+            margin-right: 3px;
+        }
+        .section-right .body_resume{
+            width: 100%;
+        }
+        .section-left .img_4-6, .img_6-8{
+            width: 130px;
+            margin-top: 40px;
+        }
+    }
+}
+

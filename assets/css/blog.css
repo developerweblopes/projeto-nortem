@@ -1,0 +1,116 @@
+#thumbnail {
+    max-width: 1000px;
+    margin: auto;  
+}
+.section-areaitem {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+.areaitem_title {
+    margin-top: 30px;
+}
+.areaitem_title_2{
+    margin-left: 20px;
+}
+.areaitem_title_subtitulo{
+    font-size: 18px;
+    color: #343434;
+    font-family: 'Montserrat', sans-serif;
+    font-style: oblique
+}
+.section-areaitem p{
+    width: 450px;
+    font-size: 18px;
+    color: #363636;
+    margin-top: 10px ;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+.areaitem_title a,
+.areaitem_title_2 a{
+    text-decoration: none;
+    border: solid 1.5px #3c814e;
+    border-radius: 30px;
+    text-align: center;
+    padding: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 18px;
+    color: #3c814e;
+    font-family: 'Allerta', sans-serif;
+}
+
+.areaitem_title_text {
+    font-size: 40px;
+}
+.areaitem_2 img {
+    margin-right: 50px;
+    margin-bottom: 20px;
+    height: 350px;
+    width: 350px;
+}
+.areaitem_3 img {
+    height: 350px;
+    width: 350px;
+    margin-left: 60px;
+}
+
+@media only screen and (max-width:925px) {
+    #thumbnail {
+        width: 100%;
+    }
+    .section-areaitem {
+        margin-left: 10px;
+    }
+    .section-areaitem p {
+        width: 400px;
+    }
+    @media only screen and (max-width:844px) {
+        .section-areaitem {
+            display: flex;
+            flex-flow: column;
+            margin-bottom: 50px;
+        }
+        .section-areaitem {
+            text-align: center;
+            margin-right: 10px;
+        }
+        .section-areaitem p {
+            width: 100%;
+            
+        }
+        .areaitem_2 img {
+            margin-right: 0px;
+        }
+        .areaitem_3 img {
+            margin-left: 0px;
+        }
+        .areaitem_3 {
+            order: 1;
+        }
+        .areaitem_title_2 {
+            order: 2;
+            margin-left: 0px;
+        }
+    }
+    @media only screen and (max-width:400px) {
+        .areaitem_2 img {
+            width: 250px;
+            height: 250px;
+            margin-bottom: 0px;
+        }
+        .areaitem_3 img {
+            width: 250px;
+            height: 250px;
+            margin-bottom: 0px;
+        }
+        .areaitem_title {
+            margin-top: 20px;
+        }
+    }
+}
+/*
+
+}*/
